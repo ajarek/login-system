@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/style.css">
+    <title>Login system </title>
+</head>
+
+<body>
+    
+    <form id="reg" method="post">
+        <div id="post"></div>
+        <h1>Register ✏️</h1>
+        <div class="wrap">
+            <label for="email" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+        </div>
+        <div class="wrap">
+            <label for="password" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password" name="password" required>
+        </div>
+        <div class="wrap">
+            <label for="repeat" class="form-label">Repeat password</label>
+            <input type="password" class="form-control" id="repeat" name="repeat" required>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+
+    <form id="log" method="post">
+        <div id="post1"></div>
+        <h1>Log in 🔑🔒</h1>
+        <div class="wrap">
+            <label for="email1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email1" name="email1">
+        </div>
+        <div class="wrap">
+            <label for="password1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password1" name="password1">
+        </div>
+
+        <button type="submit" class="btn btn-primary">Login</button>
+    </form>
+<script src="./src/app.js"></script>
+</body>
+
+</html>
