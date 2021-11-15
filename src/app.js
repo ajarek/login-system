@@ -1,7 +1,6 @@
 const formReg = document.querySelector('form#reg')
 const formLog = document.querySelector('form#log')
 
-
  async function register(e){
   e.preventDefault()
   const email = document.querySelector('input[name="email"]').value
@@ -32,13 +31,10 @@ const formLog = document.querySelector('form#log')
 }
 formReg.addEventListener('submit', register)
 
-
-
 async function logSubmit(e){
   e.preventDefault()
   const email = document.querySelector('input[name="email1"]').value
   const password = document.querySelector('input[name="password1"]').value
-  const element = document.querySelector('#post1');
   
   const data = {
     email: email,
@@ -67,21 +63,22 @@ function clearRegister(){
   password.value = ''
   repeat.value = ''
 }
+
 function clearLogSubmit(){
   const email = document.querySelector('input[name="email1"]')
   const password = document.querySelector('input[name="password1"]')
   email.value = ''
   password.value = ''
 }
+
 function alert(background, message){
   element = document.querySelector('#post')
   element.innerHTML = message;
   element.style.background = background;
-
 }
+
 function alert1(background, message){
   element = document.querySelector('#post1')
   element.innerHTML = message;
   element.style.background = background
-
 }

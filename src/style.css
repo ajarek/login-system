@@ -18,7 +18,6 @@ body {
 }
 
 form {
-
     width: 400px;
     height: 500px;
     display: flex;
@@ -35,7 +34,6 @@ form {
     display: flex;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 .wrap label {
@@ -75,6 +73,16 @@ form button {
 form button:hover {
     background: #275EFE;
 }
+form a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+form a:hover {
+    color: #275EFE;
+}
 
 #post1,
 #post {
@@ -83,5 +91,4 @@ form button:hover {
     text-align: center;
     color: white;
     background-color: #275EFE;
-
 }
